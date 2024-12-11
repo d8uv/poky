@@ -1,0 +1,20 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the
+// README at: https://github.com/devcontainers/templates/tree/main/src/ubuntu
+{
+    "name": "Yocto",
+    "build": {
+        "dockerfile": "Dockerfile"
+    },
+    "privileged": true,
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "mads-hartmann.bash-ide-vscode",
+                "yocto-project.yocto-bitbake",
+                "ms-azuretools.vscode-docker"
+            ]
+        }
+    },
+    "forwardPorts": [8000]
+    //"postCreateCommand": "pip install -r /workspaces/poky/bitbake/toaster-requirements.txt"
+}
